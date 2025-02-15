@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import './Home.css';
 import Card from "../imports/Value-Card/Card";
 import ServiceCard from "../imports/Service-Card/ServiceCard";
@@ -31,7 +30,7 @@ export default function Home() {
         }, 3000); // Change text every 3 seconds
     
         return () => clearInterval(interval);
-      }, []);
+      });
 
     const ServicesImages = [
         {
@@ -124,7 +123,7 @@ export default function Home() {
                 <section className="a">
                     <div className="wrapper">
                         <div className="wrapper-image">
-                            <img src="./assets/images/wrapper.jpg" alt="profession image" />
+                            <img src="./assets/images/wrapper.jpg" alt="profession" />
                         </div>
                         <div className="wrapper-text">
                             <h1>Why Choose Us?</h1>
@@ -159,7 +158,7 @@ export default function Home() {
                     <div className="about-container">
                         
                         <div className="about-image">
-                            <img src="/assets/images/about.jpg" alt="about image" />
+                            <img src="/assets/images/about.jpg" alt="about" />
                         </div>
 
                         <div className="about-text">
