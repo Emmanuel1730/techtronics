@@ -1,0 +1,23 @@
+.footer{
+    margin: 10px 0 10px 0;
+    display: grid;
+    justify-items: center;
+    color: var(--text-color);
+}
+.footer hr{
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.footer-items .icon{
+    padding: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.footer-items .icon:hover{
+    color: rgb(77, 74, 74);
+    transform: scale(1.3);
+}

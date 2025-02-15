@@ -1,0 +1,26 @@
+:root{
+  --dark-background: white;
+  --hover-color: #e8edf0;
+  --green: rgb(60, 238, 60);
+  --text-color: black;
+  --uni-background: rgb(245, 255, 245);
+  --border-color: rgb(250, 240, 240);
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: var(--uni-background);
+}
+p{
+  opacity: 0.8;
+}
+h1, h2{
+  color: var(--green);
+}
+
+@media (max-width: 768){
+  .hero-image img{
+    display: none;
+  }
+}
