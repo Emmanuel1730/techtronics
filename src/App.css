@@ -12,6 +12,13 @@ body{
   margin: 0;
   background-color: var(--uni-background);
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: var(--green);
+}
 p{
   opacity: 0.8;
 }
