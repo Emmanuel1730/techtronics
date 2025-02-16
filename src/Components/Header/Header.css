@@ -8,12 +8,6 @@
   height: 70px;
 }
 
-/* Logo */
-.header a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* Navigation Links */
 .header-items {
   display: flex;
@@ -43,7 +37,7 @@
 /* Contact Us Button */
 .h-button {
   height: 50px;
-  width: 100px;
+  width: 120px;
   background-color: var(--dark-background);
   color: var(--text-color);
   font-size: 14px;
@@ -75,11 +69,11 @@
       top: 70px;
       left: 0;
       width: 100%;
-      background-color: var(--uni-background);
+      background-color: var(--dark-background);
       flex-direction: column;
+      align-items: center; /* Centers items */
       padding: 20px;
       text-align: center;
-      z-index: 1000;
   }
 
   /* Show menu when open */
@@ -90,10 +84,16 @@
   .header-items ul {
       flex-direction: column;
       width: 100%;
+      align-items: center; /* Center items */
   }
 
   .header-items ul li {
       margin: 10px 0;
+  }
+
+  /* Ensure button is centered */
+  .h-button {
+      margin-top: 10px;
   }
 
   /* Show burger button */
