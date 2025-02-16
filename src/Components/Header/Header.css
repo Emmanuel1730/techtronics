@@ -75,10 +75,11 @@
       top: 70px;
       left: 0;
       width: 100%;
-      background-color: var(--dark-background);
+      background-color: var(--uni-background);
       flex-direction: column;
       padding: 20px;
       text-align: center;
+      z-index: 1000;
   }
 
   /* Show menu when open */
