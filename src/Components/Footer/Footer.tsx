@@ -7,10 +7,10 @@ export default function Footer() {
         <section className="footer">
             <hr />
             <div className="footer-items">
-                <a href="#"><FontAwesomeIcon icon={faFacebook} className="icon"/></a>
-                <a href="#"><FontAwesomeIcon icon={faTwitter} className="icon"/></a>
+                <FontAwesomeIcon icon={faFacebook} className="icon"/>
+                <FontAwesomeIcon icon={faTwitter} className="icon"/>
                 <a href="http://wa.me/265897574499"><FontAwesomeIcon icon={faWhatsapp} className="icon"/></a>
-                <a href="#"><FontAwesomeIcon icon={faLinkedin} className="icon"/></a>
+                <FontAwesomeIcon icon={faLinkedin} className="icon"/>
             </div>
             <p>&copy; Techtronics 2025 | All rights reserved</p>
         </section>
