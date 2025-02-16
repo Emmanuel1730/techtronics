@@ -1,12 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Contact.css'; 
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact() {
     const contactIcons = [
-        { Icon: faLocationDot, title: "Address", item: "Blantyre, Malawi", item2: "" },
-        { Icon: faPhone, title: "Phone", item: "0 986 544 699", item2: "0 986 544 699", link: "tel:0986544699" },
-        { Icon: faEnvelope, title: "Email", item: "techtronics@gmail.com", item2: "", link: "mailto:techtronics@gmail.com" }
+        { Icon: faLocationDot, title: "Address", item: "Blantyre, Malawi"},
+        { Icon: faEnvelope, title: "Email", item: "techtronics@gmail.com", link: "mailto:techtronics@gmail.com" },
+        { Icon: faPhone, title: "Phone", item: "0 986 54 46 99", link: "tel:0986544699" },
+        { Icon: faWhatsapp, title: "WhatsApp", item: "0 888 08 33 34", link: "http://wa.me/265888083334" },
+
     ];
 
     return (

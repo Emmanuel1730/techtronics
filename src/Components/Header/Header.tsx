@@ -31,7 +31,7 @@ export default function Header() {
         <>
             <header className="header">
                 <div className="logo">
-                    <NavLink to="/"><h2>Techtronics</h2></NavLink>
+                    <NavLink to="/"><img src="./assets/logo/logo.jpg" alt="logo" /></NavLink>
                 </div>
 
                 <button className="burger-menu" onClick={() => setMenuOpen(!menuOpen)}>
