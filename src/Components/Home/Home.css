@@ -218,7 +218,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     gap: 20px; /* Adds space between elements */
 }
 
@@ -226,11 +226,12 @@
 .p-first-img-wrapper {
     flex: 1;
     max-width: 30%;
+    max-height: 500px;
 }
 
 .p-first-img-wrapper img {
     width: 100%;
-    height: auto;
+    max-height: 437px;
     display: block;
     object-fit: cover;
 }
@@ -252,7 +253,7 @@
 
 /* Left image in upper */
 .u-left img {
-    width: 200%;
+    width: 150%;
     max-height: 210px;
     object-fit: cover;
 }

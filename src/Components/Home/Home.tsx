@@ -34,20 +34,20 @@ export default function Home() {
 
     const ServicesImages = [
         {
-            image: './assets/images/services_1.jpg',
+            image: './assets/images/Fresh-installation.jpg',
             title: 'Fresh House Electrical Installation'
         },
         {
-            image: './assets/images/services_1.jpg',
-            title: 'Fresh House Electrical Installation'
+            image: './assets/images/rectifying faults.jpg',
+            title: 'Rectifying Internal Faults'
         },
         {
-            image: './assets/images/services_1.jpg',
-            title: 'Fresh House Electrical Installation'
+            image: './assets/images/maintainance.jpg',
+            title: 'Maintainance(Rewiring)'
         },
         {
-            image: './assets/images/services_1.jpg',
-            title: 'Fresh House Electrical Installation'
+            image: './assets/images/appliance-repair.jpg',
+            title: 'Appliance Repair'
         },
     ]
 
