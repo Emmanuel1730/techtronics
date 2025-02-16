@@ -3,6 +3,7 @@ import Card from "../imports/Value-Card/Card";
 import ServiceCard from "../imports/Service-Card/ServiceCard";
 import { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 
 type FeedbackInputs = {
     email: string;
