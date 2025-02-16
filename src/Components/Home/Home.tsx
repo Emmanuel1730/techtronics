@@ -1,7 +1,6 @@
 import './Home.css';
 import Card from "../imports/Value-Card/Card";
 import ServiceCard from "../imports/Service-Card/ServiceCard";
-import { SubmitHandler, useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom';
 
