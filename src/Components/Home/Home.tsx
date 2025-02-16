@@ -3,6 +3,7 @@ import Card from "../imports/Value-Card/Card";
 import ServiceCard from "../imports/Service-Card/ServiceCard";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
+import { NavLink } from 'react-router-dom';
 
 type FeedbackInputs = {
     email: string;
@@ -74,7 +75,7 @@ export default function Home() {
                             <br />
                             <span>{headlines[currentIndex].line3}</span>
                             </h1>
-                        <button className="hero-button">Get Started</button>
+                        <NavLink to='contacts'><button className="hero-button">Get Started</button></NavLink>
                     </div>
                     <div className="hero-image">
                         <img src="./assets/images/heroimage.jpg" alt="" />
