@@ -58,10 +58,10 @@ export default function Home() {
         formState: { errors },
     } = useForm<FeedbackInputs>();
 
-    const onSubmit: SubmitHandler<FeedbackInputs> = (data) =>  {
-        console.log("Message Submitted: ", data);
-        alert("Thank you for Contacting us")
-    }
+    const onSubmit = (data: { email: string; message: string }) => {
+        window.location.href = `mailto:techtronics@gmail.com?subject=Contact%20Form%20Inquiry&body=From: ${data.email}%0D%0A%0D%0A${data.message}`;
+    };
+    
     return(
         <>
             <main className="home">
