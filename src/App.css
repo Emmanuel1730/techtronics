@@ -25,9 +25,3 @@ p{
 h1, h2{
   color: var(--green);
 }
-
-@media (max-width: 768){
-  .hero-image img{
-    display: none;
-  }
-}

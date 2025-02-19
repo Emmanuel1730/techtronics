@@ -65,55 +65,7 @@
     background-color: var(--hover-color);
 }
 
-/* 📌 Responsive Design */
-@media (max-width: 1024px) {
-    .slider-text {
-        font-size: 2.5rem;
-    }
-}
 
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-    }
-
-    .hero-text {
-        max-width: 90%;
-    }
-
-    .slider-text {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .hero-button {
-        width: 140px;
-        height: 50px;
-        font-size: 14px;
-    }
-
-    .hero-image {
-        display: none; /* Hide image on small screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .slider-text {
-        font-size: 1.8rem;
-    }
-
-    .hero-text h5 {
-        font-size: 1rem;
-    }
-
-    .hero-button {
-        width: 130px;
-        height: 45px;
-        font-size: 13px;
-    }
-}
 
 .values-section{
     background-color: rgb(10, 9, 9);
@@ -281,47 +233,6 @@
     object-fit: cover;
 }
 
-/* 📌 Responsive Design */
-@media (max-width: 768px) {
-    .passion-wrapper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .p-first-img-wrapper,
-    .p-second-part-wrapper {
-        max-width: 100%; /* Full width on small screens */
-    }
-
-    .upper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .u-left img {
-        max-width: 100%; /* Scale down properly */
-    }
-
-    .u-right h2 {
-        font-size: 1.5rem;
-    }
-
-    .u-right p {
-        font-size: 0.95rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .u-right h2 {
-        font-size: 1.3rem;
-    }
-
-    .u-right p {
-        font-size: 0.9rem;
-    }
-}
 
 .feedback {
     display: flex;
@@ -408,40 +319,7 @@
     background-color: var(--hover-color);
 }
 
-/* 📌 Responsive Design */
-@media (max-width: 768px) {
-    .feedback-container {
-        width: 95%;
-        padding: 15px;
-    }
 
-    .form-group input,
-    .form-group textarea {
-        max-width: 100%;
-        font-size: 0.95rem;
-    }
-
-    .submit-btn {
-        font-size: 0.95rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .feedback-container h2 {
-        font-size: 1.5rem;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-
-    .submit-btn {
-        font-size: 0.9rem;
-        height: 40px;
-    }
-}
 
 .about {
     display: flex;
@@ -496,48 +374,45 @@
     font-size: 1rem;
 }
 
-/* 📌 Responsive Design */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-image {
-        max-width: 100%;
-    }
-
-    .about-text {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .about-text h2 {
-        font-size: 1.5rem;
-    }
-
-    .about-text p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-text h2 {
-        font-size: 1.3rem;
-    }
-
-    .about-text p {
-        font-size: 0.95rem;
-    }
-}
 
 
 
 
 
 /* Responsive Design */
+/* 📌 Responsive Design */
+@media (max-width: 1024px) {
+    .slider-text {
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 90%;
+    }
+
+    .slider-text {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-button {
+        width: 140px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .hero-image {
+        display: none; /* Hide image on small screens */
+    }
+    /* ========================================================================================= */
     .wrapper {
         flex-direction: column; /* Stack items on smaller screens */
         align-items: center;
@@ -563,6 +438,76 @@
     .wrapper-text p {
         font-size: 0.95rem;
     }
+    /* ======================================================= */
+
+    .passion-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .p-first-img-wrapper,
+    .p-second-part-wrapper {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .upper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .u-left img {
+        max-width: 100%; /* Scale down properly */
+    }
+
+    .u-right h2 {
+        font-size: 1.5rem;
+    }
+
+    .u-right p {
+        font-size: 0.95rem;
+    }
+    /* =============================================================== */
+
+    .feedback-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        max-width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .submit-btn {
+        font-size: 0.95rem;
+    }
+    /* ================================================================= */
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .about-text {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -576,5 +521,50 @@
 
     .wrapper-text p {
         font-size: 0.9rem;
+    }
+
+    .slider-text {
+        font-size: 1.8rem;
+    }
+
+    .hero-text h5 {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        width: 130px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .u-right h2 {
+        font-size: 1.3rem;
+    }
+
+    .u-right p {
+        font-size: 0.9rem;
+    }
+
+    .feedback-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+        height: 40px;
+    }
+
+    .about-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
     }
 }
