@@ -18,6 +18,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin: -15px;
 }
 
 .header-items ul {
@@ -25,10 +26,10 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-left: -50px;
 }
 
 .header-items ul li {
-  margin: 0 15px;
   transition: 0.3s ease;
   list-style: none;
 }
