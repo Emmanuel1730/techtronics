@@ -3,6 +3,7 @@
     display: grid;
     justify-items: center;
     color: var(--text-color);
+    text-align: center;
 }
 .footer hr{
     border: 1px solid rgb(180, 180, 180);

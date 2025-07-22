@@ -4,8 +4,11 @@
     text-align: center;
     padding: 15px;
     width: 250px;
-    height: 250px;
+    height: auto;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
   }
   
   .service-image {
@@ -21,5 +24,21 @@
   .service-title {
     margin-top: 10px;
     font-size: 1rem;
+    color: var(--green);
   }
+  /* .service-card.reverse {
+    flex-direction: column-reverse;
+  } */
+
+  .service-desc{
+    margin-top: -10px;
+  }
+
+  @media (max-width: 900px){
+    .service-card.service-card.reverse{
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
   

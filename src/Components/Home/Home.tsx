@@ -4,6 +4,9 @@ import ServiceCard from "../imports/Service-Card/ServiceCard";
 import { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHammer, faHandshake, faLightbulb, faShieldHalved, faSmile } from '@fortawesome/free-solid-svg-icons';
+import InfoCard from '../imports/infoCard/InfoCard';
 
 type FeedbackInputs = {
     email: string;
@@ -13,9 +16,9 @@ type FeedbackInputs = {
 export default function Home() {
 
     const headlines = [
+        { line1: "Powered", line2: "By Purpose", line3: "Wired For Trust" },
         { line1: "Bringing", line2: "Electrical Energy", line3: "Brilliance World Wide" },
-        { line1: "Powering", line2: "the Future", line3: "with Excellence" },
-        { line1: "Innovative", line2: "Electrical Solutions", line3: "for You" },
+        { line1: "Powering", line2: "The Future", line3: "With Excellence" },
       ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,7 +31,7 @@ export default function Home() {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % headlines.length);
             setIsFading(false);
           }, 500); // Fade-out before switching
-        }, 3000); // Change text every 3 seconds
+        }, 5000); // Change text every 3 seconds
     
         return () => clearInterval(interval);
       });
@@ -36,20 +39,34 @@ export default function Home() {
     const ServicesImages = [
         {
             image: './assets/images/Fresh-installation.jpg',
-            title: 'Fresh House Electrical Installation'
+            title: 'Installations',
+            description: 'New wiring, panel upgrades, lighting systems',
+            reverse: false
         },
         {
             image: './assets/images/rectifying faults.jpg',
-            title: 'Rectifying Internal Faults'
+            title: 'Upgrades',
+            description: 'Modernization and capacity enhancements',
+            reverse: true
         },
         {
             image: './assets/images/maintainance.jpg',
-            title: 'Maintainance(Rewiring)'
+            title: 'Maintainance',
+            description: 'Routine inspections and compliance checks',
+            reverse: false
         },
         {
             image: './assets/images/appliance-repair.jpg',
-            title: 'Appliance Repair'
+            title: 'Repair',
+            description: 'Fast, dependable troubleshooting and fixes',
+            reverse: true
         },
+    ]
+
+    const infoCardItems = [
+        {img: './assets/images/info4.jpg', name: 'Why we exist', description: 'We are here to help people and businesses unlock their full potential by delivering safe, reliable electrical solutions that make life simpler and more secure. We exist to empower people`s comfort and well-being through safe, reliable systems.', reverse: false},
+        {img: './assets/images/info2.jpg', name: 'How we do it', description: 'We combine skilled expertise, innovative technology, and a commitment to excellence. Our team is passionate about getting the job done right the first time, every time.', reverse: true},
+        {img: './assets/images/info3.jpg', name: 'What we offer', description: 'From new installations and upgrades to repairs and preventative maintenance, TECHTRONICS POWER PRO SOLUTIONS is your trusted partner for electrical services that power progress with confidence..', reverse: false}
     ]
 
     const{
@@ -67,7 +84,7 @@ export default function Home() {
             <main className="home">
                 <section className="hero">
                     <div className="hero-text">
-                        <h5>Techtronics Engineering</h5>
+                        <h5>Techtronics Power Pro Solutions</h5>
                         <h1 className={`slider-text ${isFading ? "fade-out" : "fade-in"}`}>
                             <span>{headlines[currentIndex].line1}</span>
                             <br />
@@ -85,27 +102,38 @@ export default function Home() {
                 <section className="values-section">
                     <div className="v-card-container">
                     <Card
-                            icon="🤝" 
-                            title="Reliability"
-                            description="We deliver dependable services you can trust."
+                            Icon={<FontAwesomeIcon icon={faHammer} />}
+                            title="Quality & Craftsmanship"
                         />
                     <Card
-                            icon="⚡"
-                            title="Efficiency"
-                            description="Fast and high-quality solutions for your needs."
+                            Icon={<FontAwesomeIcon icon={faShieldHalved} />}
+                            title="Safety First"
                         />
                     <Card
-                            icon="🎯"
-                            title="Precision"
-                            description="Accurate and effective execution every time."
+                            Icon={<FontAwesomeIcon icon={faHandshake} />}
+                            title="Integrity & Transparency"
                         />
+                    <Card
+                            Icon={<FontAwesomeIcon icon={faLightbulb} />}
+                            title="Iinnovation & Continous Improvement"
+                        />
+                    <Card
+                            Icon={<FontAwesomeIcon icon={faSmile} />}
+                            title="Customer Satisfaction"
+                        />
+                    
                     </div>
                 </section>
                 <section className="home-details">
-                    <div className="mission-statement">
+                    <div className="mission-sec">
+                        <div className="mission-statement">
                         <h2>Our Mission</h2>
-                        <p>To make reliable services to our customers at a very affordable price with 
-                        original materials offered</p>
+                        <p>To deliver trusted electrical and air conditioning solutions that empower our clients to live and work in safe, comfortable environments—combining expert craftsmanship, integrity, and innovation in everything we do.</p>
+                    </div>
+                    <div className="mission-statement">
+                        <h2>Our Vision</h2>
+                        <p>To become most trusted name in home and industrial power solutions—where reliability, innovation, and integrity light the way</p>
+                    </div>
                     </div>
                     <div className="services">
                         <h2>Services</h2>
@@ -116,57 +144,39 @@ export default function Home() {
                                 <ServiceCard key={index}
                                         image={ Serviceimage.image}
                                         title={Serviceimage.title}
+                                        description={Serviceimage.description}
+                                        reverse={Serviceimage.reverse}
                                     />
                             ))}
                         </div>
+                        <button className='service-btn'><NavLink to='services'>See More</NavLink></button>
                     </div>
                 </section>
                 <section className="a">
                     <div className="wrapper">
                         <div className="wrapper-image">
-                            <img src="./assets/images/wrapper.jpg" alt="profession" />
+                            <img src="./assets/images/why-us.jpg" alt="profession" />
                         </div>
                         <div className="wrapper-text">
                             <h1>Why Choose Us?</h1>
-                            <h2>Unmatched Professionalism and quality</h2>
-                            <p>We deliver top-tier electrical and air condition solution with a commitment to excellency, ensuring every project is handled wih precision, safety and care</p>
+                            <p className="why-span">✅ Qualified and Certified electricians</p>
+                            <p className="why-span">✅ Timely Project delivery</p>
+                            <p className="why-span">✅ Clear communication every step of the way</p>
+                            <p className="why-span">✅ Competitive pricing without compromising Quality</p>
+                            <p>We’re not just fixing wires or installing air conditioners. We're giving homes and businesses comfort, safety, and confidence through reliable electrical solutions.We believe that safe, reliable power and climate control should be accessible to everyone, improving comfort, productivity, and peace of mind.</p>
                         </div>
                     </div>
                 </section>
-                <section className="b">
-                    <div className="passion-wrapper">
-                        <div className="p-first-img-wrapper">
-                            <img src="/assets/images/passion1.jpg" alt="passionimage" />
-                        </div>
-                        <div className="p-second-part-wrapper">
-                            <div className="upper">
-                                <div className="u-left">
-                                    <img src="/assets/images/passion2.jpg" alt="passionimage" />
-                                </div>
-                                <div className="u-right">
-                                    <h2>Our Passion for What we do</h2>
-                                    <p>Fuels our Commitment to Excellency, making us the Best in our Field</p>
-                                </div>
-                            </div>
-                            <div className="lower">
-                                <img src="/assets/images/passion3.jpg" alt="passionimage" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="about">
-                    <div className="about-container">
-                        
-                        <div className="about-image">
-                            <img src="/assets/images/about.jpg" alt="about" />
-                        </div>
-
-                        <div className="about-text">
-                            <h2>About</h2>
-                            <p>we specialize in providing reliable, efficient and innovative solutions for your electrical and cooling needs. With a team of skilled professionals we pride our selves in delivering seamless services and enhance comfort, safety and energy efficiency for both residential and commercial  spaces</p>
-                        </div>
-                    </div>
+                <section id="info-section">
+                    {infoCardItems.map((item, index) => (
+                        <InfoCard
+                            key={index}
+                            title={item.name}
+                            image={item.img}
+                            description={item.description}
+                            reverse={item.reverse}
+                            />
+                    ))}
                 </section>
 
                 <section className="feedback">

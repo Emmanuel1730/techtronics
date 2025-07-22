@@ -1,9 +1,9 @@
 :root{
   --dark-background: white;
-  --hover-color: #e8edf0;
-  --green: rgb(51,158,80);
+  --hover-color: rgb(255,102,0);
+  --green: rgb(255,102,0);
   --text-color: black;
-  --uni-background: rgb(245, 255, 245);
+  --uni-background: rgb(255, 243, 235);
   --border-color: rgb(250, 240, 240);
 }
 body{
@@ -15,9 +15,6 @@ body{
 a{
   text-decoration: none;
   color: inherit;
-}
-a:hover{
-  color: var(--green);
 }
 p{
   opacity: 0.8;
